@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=63, unique=True)
+    title = models.CharField(max_length=63)
     description = models.TextField(blank=True, null=True)
     duration = models.PositiveIntegerField()
 
